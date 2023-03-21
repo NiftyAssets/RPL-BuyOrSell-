@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Google Sheets Widget</title>
-</head>
-<body>
-	<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSf3Fo3o4vPz7IF1RwBURM81SR34aMO7tEwFjc25O075eAvHWAxqJ7HJe6CTKEFxWDWPRxwsoqFZttL/pubhtml?gid=1909237808&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-</body>
+  <head>
+    <title>RPL V1</title>
+    <style>
+      /* Add some basic styling for the banner */
+      #banner {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="banner">
+      <h2>My Running Headline Banner</h2>
+    </div>
+    <h1>RPL V1</h1>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSf3Fo3o4vPz7IF1RwBURM81SR34aMO7tEwFjc25O075eAvHWAxqJ7HJe6CTKEFxWDWPRxwsoqFZttL/pubhtml?gid=1909237808&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="500"></iframe>
+    <p>Here's some additional content that you can add to your page!</p>
+    
+    <script>
+      // Set the title of the banner
+      var title = "  🚀 RocketPool Buy or Sell? 🚀 Algo made by Niftyassets & ChatGPT 🚀  ";
+      
+      // Get a reference to the banner element
+      var banner = document.getElementById("banner");
+      
+      // Set the initial banner text to the title
+      banner.textContent = title;
+      
+      // Define a function to update the banner text
+      function updateBanner() {
+        // Rotate the title by one character
+        title = title.slice(1) + title.charAt(0);
+        // Update the banner text
+        banner.textContent = title;
+      }
+      
+      // Call the updateBanner function every 500 milliseconds
+      setInterval(updateBanner, 500);
+    </script>
+  </body>
 </html>
